@@ -21,7 +21,7 @@ void merge_sort(int *array,int begin,int end)
 			for(j=begin;j<=mid;j++)
 				if(temp>array[j])
 				{
-					for(int m=mid+1;m>=j;m--)
+					for(int m=mid+1;m>j;m--)
 						array[m]=array[m-1];
 					array[j]=temp;
 					break;
